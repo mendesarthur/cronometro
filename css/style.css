@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem 2.5rem;
+    position: relative;
+}
+
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+.container{
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#themeSwitcher {
+    background-color: var(--bg-color);
+    border: .125rem solid var(--font-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+#themeSwitcher:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color)
+}
+
+button {
+    padding: 5px 3px;
+    margin-top: 2rem;
+}
+
+#iniciar {
+    color: #000;
+    background-color: green;
+    border: 2px solid white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#pausar {
+    color: #000;
+    background-color: gray;
+    border: 2px solid white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#parar {
+    color: #000;
+    background-color: red;
+    border: 2px solid white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 450px){
+    #themeSwitcher{
+        padding: 0.3rem;
+        font-size: 0.7rem
+    }
+}
